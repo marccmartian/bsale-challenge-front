@@ -1,0 +1,45 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navigation-wrapper {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation-wrapper li a {
+  border: 0.5px solid #0d6efd;
+  background-color: lavender;
+}
+.navigation-wrapper li a:hover {
+  background-color: gray;
+  color: white;
+  border: 0.5px solid gray;
+}
+
+/* @media (max-width: 768px) {
+  
+} */
+
+.grid-fluid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  font-size: small;
+}
+
+.error {
+  color: red;
+}
+
+.card img {
+  width: auto;
+  height: 200px;
+}
