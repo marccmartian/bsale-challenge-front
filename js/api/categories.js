@@ -4,6 +4,10 @@ const d = document;
 const select = d.querySelector(".form-select");
 const main = d.querySelector("main");
 
+/**
+ * It fetches the data from the url, parses it to JSON, and then displays it in the select element.
+ * @param url - https://marv-bsale.herokuapp.com/api/categories
+ */
 export default async function loadCategories(url) {
   try {
     const response = await fetch(url);

@@ -6,6 +6,11 @@ const d = document,
   $main = d.querySelector("main"),
   $ul = d.querySelector(".pagination");
 
+/**
+ * It fetches data from an API, then it displays the products data in the DOM.
+ * @param url - The URL to fetch.
+ * @returns a promise.
+ */
 export default async function loadProducts(url) {
   try {
     $main.innerHTML = showSpinner();

@@ -1,3 +1,9 @@
+/**
+ * It takes an array of products and returns a string of HTML code that represents a card for each
+ * product
+ * @param [products] - an array of objects, each object is a product
+ * @returns A string with the HTML code of the cards.
+ */
 export default function showProductCards(products = []) {
   const cards = products.map((product) => {
     return `

@@ -12,6 +12,11 @@ let template3 = `
   </li>  
 `;
 
+/**
+ * It takes the total number of pages and returns a string of HTML that contains the pagination links.
+ * @param totalPages - The total number of pages.
+ * @returns the template1, template2, and template3 variables.
+ */
 const showPagination = (totalPages) => {
   let template2 = "";
 
