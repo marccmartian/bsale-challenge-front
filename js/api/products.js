@@ -17,6 +17,10 @@ export default async function loadProducts(url) {
     if (!response.ok)
       throw { status: response.status, statusText: response.statusText };
 
+    if (totalItems === 0) {
+      return ($main.innerHTML = `<p class="error">No hay resultados de la busqueda</p>`);
+    }
+
     $ul.innerHTML = showPagination(totalPages);
 
     // toggle to arrow buttons pagination status

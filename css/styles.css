@@ -23,10 +23,6 @@ header {
   border: 0.5px solid gray;
 }
 
-/* @media (max-width: 768px) {
-  
-} */
-
 .grid-fluid {
   display: grid;
   gap: 2rem;
@@ -36,10 +32,36 @@ header {
 }
 
 .error {
-  color: red;
+  color: #fe5f55;
+  font-size: 1rem;
 }
 
 .card img {
   width: auto;
   height: 200px;
+}
+
+.input-error {
+  border: 2px solid #fe5f55;
+  /* background-color: #fe5f55; */
+}
+
+.input-error-msg {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fe5f55;
+  /* font-weight: bold; */
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 180px;
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
