@@ -22,3 +22,6 @@ Si deseas cambiar de entorno; debes cambiar el valor de la constante `apiUrl` de
 
 - Backend en tu local host: `const apiUrl = "http://localhost:5000"` (tener en cuenta el número de puerto en que se esta ejecutando el backend)
 - Backend en producción: `const apiUrl = "https://marv-bsale.herokuapp.com"`
+
+## Producción
+A continuación se muestra la demo [Aquí](https://marv-bsale.netlify.app/).
